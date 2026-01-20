@@ -1,10 +1,10 @@
 
 import React, { useState, useEffect, useRef } from 'react';
-import { GameState, PresetTheme } from './types.ts';
-import { generatePuzzleImage } from './services/geminiService.ts';
-import { createInitialTiles, scatterTiles, checkSnap, getPuzzlePath, getTileBounds, ROWS, COLS, PLAY_AREA_HEIGHT_PERCENT } from './utils/puzzleLogic.ts';
-import Header from './components/Header.tsx';
-import LoadingOverlay from './components/LoadingOverlay.tsx';
+import { GameState, PresetTheme } from './types';
+import { generatePuzzleImage } from './services/geminiService';
+import { createInitialTiles, scatterTiles, checkSnap, getPuzzlePath, getTileBounds, ROWS, COLS, PLAY_AREA_HEIGHT_PERCENT } from './utils/puzzleLogic';
+import Header from './components/Header';
+import LoadingOverlay from './components/LoadingOverlay';
 
 const PRESET_THEMES: PresetTheme[] = [
   { name: 'Bosque Mágico', prompt: 'Un bosque encantado con árboles de cristal y luciérnagas doradas, estilo acuarela detallada', icon: 'fa-tree' },
